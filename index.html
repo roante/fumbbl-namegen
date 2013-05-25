@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='pix/favicon.ico' rel='icon' type='image/x-icon'/>
+	<title>Roante's Fumbbl-namegen</title>
+	<style type="text/css">
+		body {
+			background-color: #EEEEEE;
+			margin: 0px 0px 5px 0px;
+		}
+
+		a.bookmarklet {
+			background-color: #444;
+			color: #fff;
+			text-shadow: #222 1px 1px 0px;
+			padding: 0px 5px;
+			display: inline-block;
+			border-radius: 5px;
+			line-height: 1.4em;
+			text-decoration: none;
+		}
+
+		.content {
+			width: 700px;
+			text-align: left;
+			margin: auto;
+		}
+		
+		.header {
+			background-color: #444;
+			color: #fff;
+			text-align: center;
+			padding: 10px 0px 10px 0px;
+			margin: 0px 0px 0px 0px;
+		}
+
+		.footer {
+			color: #888;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://github.com/roante/fumbbl-namegen"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+	<div class="header">
+		<h1>Roante's fumbbl-namegen</h1>
+	</div>
+	<div class="content">
+
+	<h2>How to set it up?</h2>
+
+	<ol>
+		<li>Drag this bookmark <a class="bookmarklet" href="javascript:
+var title = window.location.href;
+if ( title.indexOf('fumbbl-namegen') >= 0 ) {
+	'<head><link rel=\'shortcut icon\' href=\'pix/favicon.ico\'></head><body>Icon was set! Go back :-)</body>';
+} else {
+	(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/roante/fumbbl-namegen/master/js/fumbbl-namegen.js';})();
+}">fumbbl-namegen</a> to your Bookmarks Bar.<br />
+			[<a href="http://my.opera.com/desktopteam/blog/2010/09/15/hello-bookmarks-bar">Opera</a>]
+			[<a href="http://support.mozilla.org/en-US/kb/bookmarks-toolbar-display-favorite-websites">Firefox</a>]
+			[<a href="https://support.google.com/chrome/answer/95745">Chrome</a>]
+		</li>
+		<li>Click on the link once and reload the page to set an icon for it.</li>
+		<li>When editing a team, copy and paste the URL into a new tab.</br>
+		    <i>This is important, the script won't work in the popup window except for Opera!</i></li>
+		<li>Click on the bookmark to get a random name :-)</li>
+	</ol>
+
+	<p>
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<a class="addthis_button_tweet"></a>
+		<a class="addthis_button_pinterest_pinit"></a>
+		<a class="addthis_counter addthis_pill_style"></a>
+		</div>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-519e2ab62965a201"></script>
+		<!-- AddThis Button END -->
+	</p>
+
+	<h2>How does it works?</h2>
+	<img src="pix/usage.png"/>
+
+	<h2>Acknowledgement</h2>
+	<p>Many thanks for <a href="http://www.creative-role-playing.com/fantasy-sounding-names/">Creative Role Playing</a> for compiling a list of fantasy-sounding names which I unashamedly stole :-)</p>
+
+	<h2>Comment?</h2>
+	<p>Any comments, suggestions are more than welcome either by <a href="mailto:roante.bb@gmail.com?subject=Your%20silly%20stuff%20ain't%20working!">mail</a> or leave an issue at the <a href="https://github.com/roante/fumbbl-namegen/issues">Github site</a>.</p>
+
+	<hr/>
+
+	<div class="footer">
+		2013 - Imagine some bullshit copyright note &copy; here :-) - <a href="mailto:roante.bb@gmail.com?subject=Your%20silly%20stuff%20ain't%20working!">Roante</a>
+	</div>
+	</div>
+</body>
+
