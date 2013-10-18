@@ -1,3 +1,14 @@
+function setName(generatedName) {
+	var elements = document.getElementsByName("name");
+
+	if (elements.length > 0) {
+		elements[0].value = generatedName;
+	} else {
+		alert("No name input field was found!\n" +
+		      "Please report the error at roante.bb@gmail.com!");
+	}
+}
+
 var names = [
 	"Aache",
 	"Aanwas",
@@ -4230,21 +4241,6 @@ function rndName() {
 function generateName() {
 	return rndName() + " " + rndName();
 }
-
-var elements = document.getElementsByName("name");
-
-function setName(generatedName) {
-	elements[0].value = generatedName;
-}
-
-/*
-if (elements.length > 0) {
-	elements[0].value = generateName();
-} else {
-	alert("No name input field was found!\n" +
-	      "Please report the error at roante.bb@gmail.com!");
-}
-*/
 
 function pids(n) {
 	var position_ids = document.getElementsByName("position_id");
