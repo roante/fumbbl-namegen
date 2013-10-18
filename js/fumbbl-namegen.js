@@ -4219,8 +4219,12 @@ var names = [
 	"Zyten"
 ]
 
+function rndArrElement(arr) {
+	return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function rndName() {
-	return names[Math.floor(Math.random() * names.length)];
+	return rndArrElement(names);
 }
 
 function generateName() {
@@ -4229,10 +4233,146 @@ function generateName() {
 
 var elements = document.getElementsByName("name");
 
+function setName(generatedName) {
+	elements[0].value = generatedName;
+}
+
+/*
 if (elements.length > 0) {
 	elements[0].value = generateName();
 } else {
 	alert("No name input field was found!\n" +
 	      "Please report the error at roante.bb@gmail.com!");
 }
+*/
+
+function pids(n) {
+	var position_ids = document.getElementsByName("position_id");
+	if (position_ids.length > 0) {
+		return n == position_ids[0].value;
+	} else {
+		return false;
+	}
+}
+
+function toArray(longStringSeparatedByComas) {
+	return longStringSeparatedByComas.split(", ");
+}
+
+function isOrcTeam() {
+	var orcTroll = 2921;
+	return pids(orcTroll);
+}
+
+// Source: http://www.uesp.net/wiki/Lore:Orc_Names
+function generateOrcName() {
+	var names =
+		toArray("Atulg, Azuk, Bagamul, Bakh, Baronk, Bashag, Bazgulub, Bogakh, Bologra, Borug, Both, Bugdul, Bugharz, Bugrash, Bugrol, Bumbub, Burul, Dul, Dular, Duluk, Duma, Dumbuk, Dumburz, Dur, Durbul, Durgash, Durz, Durzol, Durzub, Durzum, Garothmuk, Garzonk, Gashna, Ghamborz, Ghamonk, Ghoragdush, Ghorlorz, Glush, Grat, Gruzgob, Guarg, Gurak, Khadba, Khagra, Khargol, Koffutto, Largakh, Lorbumol, Lorzub, Lugdum, Lugrub, Lurog, Mash, Matuk, Mauhul, Mazorn, Mol, Morbash, Mug, Mugdul, Muk, Murag, Murkub, Murzol, Muzgonk, Nag, Nar, Nash, Ogrul, Ogrumbu, Olfin, Olumba, Orakh, Rogdul, Shakh, Shamar, Shamob, Shargam, Sharkub, Shat, Shazgob, Shulong, Shura, Shurkul, Shuzug, Snaglak, Snakha, Snat, Ugdumph, Ughash, Ulam, Umug, Uram, Urim, Urul, Urzog, Ushamph, Ushat, Yadba, Yagak, Yak, Yam, Yambagorn, Yambul, Yargol, Yashnarz, Yatur, Agronak, Bat, Bazur, Brugo, Bogrum, Brag, Brokil, Bugak, Buramog, Burz, Dubok, Dul, Dulfish, Dulphumph, Dumag, Gaturn, Ghola, Ghorub, Gogron, Gorgo, Graklak, Graman, Grommok, Gul, Hanz, Krognak, Kurdan, Kurz, Lum, Lumdum, Luronk, Magra, Magub, Maknok, Mug, Orok, Rugdumph, Shagol, Shagrol, Shobob, Shum, Ulmug, Urbul, Urul, Ushnar, Uzul, Gortwog, Makor, Olpac, Balagog, Bashnag, Borkul, Burguk, Durak, Dushnamub, Gadba, Gat, Ghamorz, Ghorbash, Ghunzul, Grogmar, Grushnag, Gularzob, Kharag, Larak, Lob, Lurbuk, Mahk, Makhel, Malkus, Mauhulakh, Moth, Mul, Mulush, Nagrub, Oglub, Ogol, Olur, Ulag, Umurn, Urag, Yamarz, Yar, Durgob, Grul, Mog, Othmash, Ramolg, Shelakh, Uzgakh, Agrob, Badbog, Bashuk, Bogdub, Bugdurash, Bula, Bulak, Bulfim, Bum, Burub, Burzob, Dura, Durgat, Durz, Gashnakh, Ghob, Glasha, Glob, Gluronk, Gonk, Grat, Grazob, Gulfim, Kharzug, Lagakh, Lambug, Lazgar, Mogak, Morn, Murob, Murzush, Nargol, Orbul, Ragash, Rolfish, Rulfim, Shadbak, Shagar, Shagdub, Sharn, Sharog, Shelur, Sloomalah, Uloth, Ulumpha, Urzoth, Urzul, Ushug, Yazgash, Batul, Borba, Bumph, Homraz, Mazoga, Mog, Mor, Oghash, Orag, Rogbut, Rogmesh, Snak, Ugak, Umar, Umog, Arob, Atub, Bagrak, Batum, Bolar, Bor, Borgakh, Dulug, Garakh, Ghak, Gharol, Ghorza, Gul, Lash, Mogdurz, Murbul, Sharamph, Shel, Shuftharz, , Ugor, Urog, Urzoga, Yag, Yatul, Voltha");
+
+	var foods = toArray("Ghoul, Goblin, Troll, Dread, Wolf, Tree, Fling, Amazon, Elf, Lizard, Rat, Beast, Zombie, Skeleton, Frog, Dworf, Viking, Mummy, Ogre, Vampire");
+
+	var eatingStyles = toArray("chewer, eater, gor, slayer, smasher, claw, fury, tooth, burner, pillager, pox, seer, fever, thul, turd, trapper, deathbringer, smasha, fella, arm, dawner, breaker, mauler, devourer, belly, bleeder, brother, thar, basher, stealer, slaver, maimer, hunter, flamer, tyrant, chopper, burster");
+
+	return rndArrElement(names) + " " + rndArrElement(foods) + "-" + rndArrElement(eatingStyles);
+}
+
+if (isOrcTeam()) {
+	setName(generateOrcName());
+} else {
+	setName("???");
+}
+
+/*
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+
+if (isTeam()) {
+	return generateName();
+}
+*/
 
