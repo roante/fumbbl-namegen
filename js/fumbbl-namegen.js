@@ -181,61 +181,6 @@ function isVampireTeam() {
 	return checkIfRosterHasPositionalWithId(vampireLordIdInRoster);
 }
 
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
-function isTeam() {
-	var IdInRoster = ;
-	return checkIfRosterHasPositionalWithId(idInRoster);
-}
-
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
 function generateOrcName() {
 	var names =
