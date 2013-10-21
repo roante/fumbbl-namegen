@@ -200,6 +200,11 @@ function generateChaosDwarfName() {
 
 }
 
+function generateChaosPactName() {
+	var alternatives = [generateChaosName, generateDarkElfName, generateGoblinName, generateSkavenName];
+	return randomElementOf(alternatives)();
+}
+
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
 function generateOrcName() {
 	var orcNames =
