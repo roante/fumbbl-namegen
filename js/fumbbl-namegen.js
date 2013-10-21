@@ -205,6 +205,13 @@ function generateChaosPactName() {
 	return randomElementOf(alternatives)();
 }
 
+// Source: http://www.seventhsanctum.com/generate.php?Genname=darkelfnamer
+function generateDarkElfName() {
+	var durchiiNames = toArray("Binalais, Borel, Byloraas, Dorha, Enehiduz, Eviod, Idemo, Idobir, Idxek, Iredod, Izerin, Kirta, Lihod, Naronuab, Niril, Noreniol, Oreky, Oriratu, Otiraroc, Rabaniak, Riden, Terurtob, Uranetar, Vise, Zirykram, Arkit, Atova, Cusvu, Didri, Edonaki, Etaoc, Etina, Ibaad, Icbav, Ireforer, Loris, Muhydac, Naneb, Neratom, Odeda, Ohciz, Oriid, Radet, Suha, Taranef, Tytozkar, Ulbic, Umaban, Umakino, Yiduseid, Ahdar, Akitamal, Anrad, Cale, Darazet, Ekilanuk, Ekysodo, Hyxir, Idarikal, Irareyi, Izren, Leredzar, Nahirvon, Relerar, Rini, Rokaxnax, Ruvixad, Sadofise, Uhanuza, Uloret, Uraot, Yudne, Zavro, Zeravin, Zirumoir, Acute, Adaca, Adera, Anyol, Atamu, Atarebe, Atleh, Danu, Dinko, Dirle, Emasa, Eryis, Exoic, Hebeliih, Kite, Oller, Oniar, Otarebod, Otybura, Ranovaoh, Rirel, Risar, Urfer, Vacirlur, Zorre")
+	
+	return randomArrayElement(names) + " " + randomArrayElement(durchiiNames);
+}
+
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
 function generateOrcName() {
 	var orcNames =
