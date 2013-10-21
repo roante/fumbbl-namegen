@@ -192,6 +192,14 @@ function generateAmazonName() {
 	return randomArrayElement(zonNames) + " " + randomArrayElement(names);
 }
 
+// Source: http://www.chaos-dwarfs.com/wiki/index.php?title=Chaos_Dwarf_Names
+function generateChaosDwarfName() {
+	var cdNames = toArray("Doomaxe, the Dreaded, Drum, Drone Ulsen, the Foaming, Mad Furrikson, Khazek, Doomlord Mad Mark, Trollbiter, Napper, Grundrin, Pulper, Spikehead, The Master, of Madness, Antor, Axebreath, Axehead, One-Eye, Azakil, Bonecruncher, Badbreath, Blackbeard, Baldrick, Backbreaker, Barin, Aardnose, Barin, Spikehead, Belakhost, Deathbringer, Carazad, Spiketail, Dourgrim, Duniun, Dust-tooth, Durgal, Deathdealer, Ekalim, The Mad, Finehorn, Deathscream, Furgul, Thunderfoot, Geggus, Boltwanger, Grimdur, Gutwrencher, Growler, Beardhead, Hairy, Hengist, Horse-eater, Hardgrab, Hammerhand, Jabbertooth, Eyesplinter, Jezreel, Ironhand, Kaaos, Armahand, Khardang, Bloodsucker, Kirgund, Widowmaker, Lufin, Bristlebeard, Mainliner, Deathswipe, Naurthang, Blacksoul, Ori, Pointed-beard, Origol, The Horrible, Pig Splatter, Radblast, The Reaver, Rainhard, Stump, Scarsol, Smashskull, Sithan, Sharpsword, Slayer, Maskface, Spikes, Harveywotan, Squarehammer, One-Eye, Status, Wastedhead, Stunty, Sven, Targ, Toothface, Telegrim, Flamebeard, Thrakbal, Skullcrusher, Ulfo, Bloodmask, Zelazad, Hornhead, Thymbrin, Snakebeard, Astragoth, Zhatan, the Black, Commander of Zharr, Ghorth, the Cruel, Anurell, Lord Bzaark, Zhrazak, Bultar, Slavemaster, Varzhnak, The Black, Barukh, the Champion, Rykarth, the Unbreakable, Hthark, the Unstoppable, Zzharg, Madeye, Zharr, Naggrund, Ziggurrat, Scarfaced, Scavengers, Halgir, Ashbrewer, Mordian, Slagfest, Vikram, Flametongue, Gakroth, Zhorgrath, Zygrad, Baron, Brightgore, Od, Blackfang, Vile, Slitbone, Dut, Doomaxe, Angror, Gruil, Swiftfoot, Spinetoe, Ogi, Darktooth, Voxin, Gashgrut, Sureye, Kroenail, Gorduz, Backstabber, Ghazak, Khan, the, Terror of the East, Oglah, Khan, Tarka, Gorduz, Glashruk, Grashnak, Sneekit, Skurfrik, Stone-Sucker, Rashnak, Backstabber, Brodai, Choknech, Morcar, Khan, Shoresh, Zhorag");
+
+	return randomArrayElement(names) + " " + randomArrayElements(cdNames);
+
+}
+
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
 function generateOrcName() {
 	var orcNames =
