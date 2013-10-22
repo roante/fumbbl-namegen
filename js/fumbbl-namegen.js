@@ -192,6 +192,13 @@ function generateAmazonName() {
 	return randomArrayElement(zonNames) + " " + randomArrayElement(names);
 }
 
+// Source: http://wh40k.lexicanum.com/wiki/List_of_Chaos_Lords
+function generateChaosName() {
+	var chaosNames = toArray("Abaddon, the Despoiler, Ahriman, Amadeus, Volkstein, Andraaz, Vandred, Anrathi, Araghast, Arkos, Asphodel, Baldarun, Bale, Heinrich, Bale, Berossus, Borroleth, Brule, Fabius, Bile, Helman, Brisch, Firaeveus, Carron, Chengrel, Constantinus, Crull, Davroth, Drachmus, Manneus, Drath, Demetrius, Dynat, Mal, Ekodas, Eleaxus, Eliphas, Emmesh-Aiye, Erebus, Ezrath, Cull, Ferrous, Ironclaw, Festardius, Furion, Garand, Roek, Ghulclaw, Halasker, Gallus, Herodicus, Argan, Kallorax, Hans, Kho'ren, Headsman, of Cellebos, Hemek, Hezlock, Hodir, Honsou, Lord, of the Bloodborn, Kyrus, Lufgt, Huron, Enok, Innokenti, Jihar, Jarulek, Kathal, Kharn, Khrove, Khuzor, Kolvax, Devram, Korda, Kor, Phaeron, Kossolax, Kraagon, Gorefist, Kelbor-Hal, Koros, Kranon, the Relentless, Lucius, Madox, Marduk, Mordeghai, Mothac, Nadzybar, Necrosius, Nemeroth, Paristur, Phocron, Potchek, Purgor, Rynax, Elak, Sarda, Savill, Pater, Sin, Oneius, Prayd, Sathash, Anakwanar, Sek, Sektoth, Shon'tu, Skchalick, Skyrak, Slaughterborn, Svane, Vulfbad, Tarraq, Darkblood, Toramino, Typhus, Urkrathos, Urlock, Gaur, Ussax, Varan, Von, Mallas, Ygethmor, Zagthean, Zhufor, Zhorisch, Zymran");
+
+	return randomArrayElement(names) + " " + randomArrayElement(chaosNames);
+}
+
 // Source: http://www.chaos-dwarfs.com/wiki/index.php?title=Chaos_Dwarf_Names
 function generateChaosDwarfName() {
 	var cdNames = toArray("Doomaxe, the Dreaded, Drum, Drone Ulsen, the Foaming, Mad Furrikson, Khazek, Doomlord Mad Mark, Trollbiter, Napper, Grundrin, Pulper, Spikehead, The Master, of Madness, Antor, Axebreath, Axehead, One-Eye, Azakil, Bonecruncher, Badbreath, Blackbeard, Baldrick, Backbreaker, Barin, Aardnose, Barin, Spikehead, Belakhost, Deathbringer, Carazad, Spiketail, Dourgrim, Duniun, Dust-tooth, Durgal, Deathdealer, Ekalim, The Mad, Finehorn, Deathscream, Furgul, Thunderfoot, Geggus, Boltwanger, Grimdur, Gutwrencher, Growler, Beardhead, Hairy, Hengist, Horse-eater, Hardgrab, Hammerhand, Jabbertooth, Eyesplinter, Jezreel, Ironhand, Kaaos, Armahand, Khardang, Bloodsucker, Kirgund, Widowmaker, Lufin, Bristlebeard, Mainliner, Deathswipe, Naurthang, Blacksoul, Ori, Pointed-beard, Origol, The Horrible, Pig Splatter, Radblast, The Reaver, Rainhard, Stump, Scarsol, Smashskull, Sithan, Sharpsword, Slayer, Maskface, Spikes, Harveywotan, Squarehammer, One-Eye, Status, Wastedhead, Stunty, Sven, Targ, Toothface, Telegrim, Flamebeard, Thrakbal, Skullcrusher, Ulfo, Bloodmask, Zelazad, Hornhead, Thymbrin, Snakebeard, Astragoth, Zhatan, the Black, Commander of Zharr, Ghorth, the Cruel, Anurell, Lord Bzaark, Zhrazak, Bultar, Slavemaster, Varzhnak, The Black, Barukh, the Champion, Rykarth, the Unbreakable, Hthark, the Unstoppable, Zzharg, Madeye, Zharr, Naggrund, Ziggurrat, Scarfaced, Scavengers, Halgir, Ashbrewer, Mordian, Slagfest, Vikram, Flametongue, Gakroth, Zhorgrath, Zygrad, Baron, Brightgore, Od, Blackfang, Vile, Slitbone, Dut, Doomaxe, Angror, Gruil, Swiftfoot, Spinetoe, Ogi, Darktooth, Voxin, Gashgrut, Sureye, Kroenail, Gorduz, Backstabber, Ghazak, Khan, the, Terror of the East, Oglah, Khan, Tarka, Gorduz, Glashruk, Grashnak, Sneekit, Skurfrik, Stone-Sucker, Rashnak, Backstabber, Brodai, Choknech, Morcar, Khan, Shoresh, Zhorag");
@@ -228,6 +235,31 @@ function generateElfName() {
 			"Imriwir, Indilar, Indithel, Ingane, Inithos, Ionor, Ionora, Iovaine, Iovaino, Ipan, Iridith, Ithas, Ithelas, Itheles, Ivandrel, Lalane, Lanafar, Lanara, Landara, Laneth, Lanoth, Laran, Larian, Larin, Larindi, Larindil, Larindir, Larindiri, Larivil, Larvin, Lauren, Laurenor, Laureth, Lauron, Lauronor, Lauros, Lauroth, Lenora, Lenorath, Lenuvael, Lenuviel, Lilane, Lilano, Lilin, Linafar, Linara, Linari, Linarith, Lindara, Lindiri, Linifir, Liniri, Linith, Linivil, Liras, Lirin, Lirinar, Lirith, Lonora, Lonorath, Lonuviol, Loran, Loranda, Lorandal, Lorandar, Lorandara, Lorandil, Lorandir, Loruvael, Loruviel, Loruviol, Lorvaine, Lorvaino, Lorvane, Madeth, Madhuar, Madhuir, Madorel, Madorol, Madoth, Malia, Maluviel, Mara, Marethel, Marra, Maruva, Maruvael, Maruvaine, Maruvaino, Maruvane, Maruvar, Maruvel, Maruvia, Maruviel, Maruviol, Maruvir, Maruvol, Marval, Marvil, Mathuar, Mathuir, Mavara, Melamir, Melethos, Melgrana, Meliana, Melir, Mella, Mellaon, Mellion, Melored, Meluviel, Merhuar, Merhuir, Midaril, Midhir, Midith, Milamir, Milarid, Milithas, Millian, Mirhir, Miri, Mirivi, Mirivil, Mirivin, Mirivir, Mirri, Mirvil, Mithir, Miviri, Mollion, Molorod, Molothos, Morhuir, Pelamar, Pelamir, Pelana, Pelar, Pelgrana, Peliana, Pelir, Pella, Peluvael, Peluviel, Pildrin, Pilimir, Pilin, Pilir, Piliril, Pilivil, Pilli, Pivindil, Pivindis, Pivithas, Pivithil, Pivithis, Polamir, Polgrana, Poliana, Polir, Polla, Poluviol, Ravenath, Ravonath, Rivinith, Sadra, Sadral, Salamar, Salane, Salarel, Saluvane, Salvael, Savane, Savathas, Savathel, Savathos, Savenath, Savindas, Savindel, Sidri, Sidria, Sidril, Silamir, Silimir, Silivin, Siluvaine, Siluvaino, Silviel, Silvil, Silviol, Sivaine, Sivaino, Sivin, Talla, Tallana, Tandal, Tilli, Tillin, Tindil, Tivandir, Tivandria, Tivandriel, Uabar, Udrin, Udrindil, Udrithal, Udrithil, Uibir, Uisilian, Ulin, Ulithil, Ulla, Ullana, Ulli, Ullia, Ulliana, Ullin, Ultran, Umindilis, Uminil, Uminis, Undin, Undithil, Unithas, Uthilis, Uthis, Uvindril, Vavandar, Vavandra, Vavandrael, Vivandir, Vivandria, Vivandriel, Vivandriol, Vivindir, Vivindri, Vivindril, Yavaine, Yavaino, Yavane, Yivil, Yivin, Yuvael, Yuviel, Yuviol");
 	
 	return randomArrayElement(names) + " " + randomArrayElement(elfieNames);
+}
+
+// Source: http://www.paper-dragon.com/fantasyland/orcname.html
+function generateGoblinName() {
+	var gobboSet1 = [ "ash", "barge", "barn", "bart", "barty", "beetle", "bitti", "blod", "bog", "bolb", "brittl", "bug", "bum", "car", "clobber", "dagy", "dark", "dest", "dhak", "dher", "farty", "fatty", "filth", "flab", "frad", "frak", "frowl", "gab", "gan", "gartle", "ghul", "goo", "gorgol", "gree", "grill", "grim", "grit", "grog", "grot", "growl", "grull", "grut", "hang", "hurt", "iggy", "ithy", "johd", "karg", "killy", "krull", "lagg", "mor", "mugg", "mumph", "nar", "narg", "naz", "non", "oggy", "piff", "pipi", "plop", "pork", "pug", "pul", "punch", "rock", "rot", "sart", "scab", "scree", "shag", "shak", "skank", "skeg", "slag", "slig", "slime", "snot", "snuff", "squi", "tar", "tark", "trob", "ug", "uggn", "ugly", "undy", "uz", "uzi", "vert", "vom", "wast", "waz", "xak", "yarl", "zar", "zarn", "zog", "zug" ];
+
+	var gobboSet2 = [ "ale", "and", "bat", "beer", "bi", "bin", "blood", "bog", "brittle", "bug", "butt", "buy", "chest", "clib", "dag", "dead", "derg", "dip", "dirg", "dirk", "dirt", "dirty", "dug", "duggy", "dum", "ed", "erl", "fag", "fang", "fart", "farty", "fat", "fatty", "filthy", "frag", "fright", "frum", "gag", "ger", "gimp", "git", "gle", "goo", "goon", "graka", "green", "grim", "grimy", "grin", "grol", "grose", "gru", "gun", "hoo", "humi", "hurt", "icky", "ig", "iggy", "in", "it", "kil", "krah", "le", "marl", "mean", "miggy", "mork", "mud", "niggy", "nose", "og", "oth", "pain", "parj", "piss", "ple", "prob", "puke", "pump", "ra", "rard", "scabby", "sludge", "smell", "smig", "stak", "stik", "the", "turd", "ug", "undy", "verf", "wimpy", "wing", "wipe", "yack", "yarh", "yee", "zigg" ];
+	
+	var gobboSet3 = [
+"barrel", "be", "bok", "bomb", "bottom", "boy", "bref", "bum", "burr", "butt", "cat", "clutz", "cotz", "crack", "dead", "deg", "diggy", "dug", "dum", "er", "ert", "ex", "ey", "fad", "fang", "filth", "foot", "fud", "gag", "git", "gle", "gloop", "good", "grime", "grit", "grot", "grule", "grunt", "guck", "gun", "guss", "gutt", "hed", "horned", "humi", "keg", "killer", "killy", "kun", "lad", "lard", "lence", "ler", "lip", "meg", "mid", "mirt", "moggy", "morn", "muck", "mud", "nacker", "nail", "ni", "noose", "nose", "ork", "otis", "ottle", "oz", "puss", "rat", "rung", "sarg", "scum", "skin", "slime", "slip", "sludge", "snak", "snot", "ster", "strong", "teg", "toof", "turd", "u", "um", "ungy", "urt", "vomit", "wart", "waste", "wee", "wert", "wipe", "yed", "yert", "zed", "ziggy" ];
+
+	var gobboNameAlternatives = [
+		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2)},
+		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)},
+		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3)},
+
+		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1)},
+		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3)},
+		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)}
+	];
+
+	return randomArrayElement(gobboNames)();
+}
+
+function generateHalflingName() {
 }
 
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
