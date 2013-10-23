@@ -235,8 +235,7 @@ function generateDwarfName() {
 // http://forum.rpg.net/showthread.php?496505-WFRP-Help-me-with-elf-names
 // http://www.windsofchaos.com/wp-content/uploads/encroachment/html/generator-elf-male-old-world-01.html
 function generateElfName() {
-	
-	return randomArrayElement(names) + " " + randomArrayElement(elfieNames);
+	return randomArrayElement(names) + " " + randomArrayElement(genericElfNames);
 }
 
 // Source: http://www.paper-dragon.com/fantasyland/orcname.html
@@ -273,7 +272,9 @@ function generateHalflingName() {
 }
 
 function generateHighElfName() {
-	var durchiiNames = concat(genericElfNames, ["Quickstab", "Shadowblade", "Lightingslash", "Quietstep", "Lionfeet"]);
+	var highElfNames = concat(genericElfNames, ["Prince", "Baron", "Captain", "Leader", "Noble", "Lord", "Emperror", "Czar", "High King", "Archduke", "Duke", "Dauphin", "Infante", "Elector", "Marquis", "Landgrave", "Count", "Viscount", "Freiherr", "Knight", "Dominus", "Vidame", "Viceroy", "King"]);
+	
+	return randomArrayElement(highElfNames) + " " + randomArrayElement(names);
 
 }
 
