@@ -271,10 +271,19 @@ function generateHalflingName() {
 	return randomArrayElement(lingNames) + " " + randomArrayElement(foods) + "-" + randomArrayElement(eatingStyles);
 }
 
+// Source: http://en.wikipedia.org/wiki/Royal_and_noble_ranks
 function generateHighElfName() {
 	var highElfNames = concat(genericElfNames, ["Prince", "Baron", "Captain", "Leader", "Noble", "Lord", "Emperror", "Czar", "High King", "Archduke", "Duke", "Dauphin", "Infante", "Elector", "Marquis", "Landgrave", "Count", "Viscount", "Freiherr", "Knight", "Dominus", "Vidame", "Viceroy", "King"]);
 	
 	return randomArrayElement(highElfNames) + " " + randomArrayElement(names);
+
+}
+
+function generateHumanName() {
+	return randomArrayElement(names) + " " + randomArrayElement(names);
+}
+
+function generateKhemriName() {
 
 }
 
