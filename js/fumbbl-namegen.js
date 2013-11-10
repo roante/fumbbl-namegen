@@ -18,6 +18,10 @@
  */
 
 // --- utils.js ---------------------------------------------------------------
+String.prototype.capitalize = function() {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
 function toArray(longStringSeparatedByComas) {
 	return longStringSeparatedByComas.split(", ");
 }
@@ -257,7 +261,7 @@ function generateGoblinName() {
 		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)}
 	];
 
-	return randomArrayElement(gobboNames)();
+	return randomArrayElement(gobboNames)().capitalize();
 }
 
 // Sources:
@@ -290,6 +294,38 @@ function generateKhemriName() {
 	return randomArrayElement(egyptianNames) + " " + randomArrayElement(egyptianNames);
 }
 
+// Source: http://www.lowchensaustralia.com/names/incanames.htm
+function generateLizardmenName() {
+	var aztecIncaMayaNames = [
+"Acahuana", "Anahuarque", "Apocatequil", "Apacheta", "Apaec", "Apo-mayta", "Apu-illapu", "Apu-illapu", "Auqui amaru tupac", "Auqui maita", "Ayar", "Ayar-acar", "Ayar-cachi", "Ayar-colo", "Ayar-manco", "Axomamma", "Capac yupanqui", "Catequil", "Cava", "Cavillaca", "Chasca", "Chasca-coyllur", "Chic'ya", "Chimpu ocllo", "Cocomama", "Con", "Kon", "Coniraya", "Copacati", "Cuca", "Curi illpay", "Cuxi uarcay", "Ekkekko", "Epunamun", "Guachimines", "Guamansuri", "Huallpa rimachi", "Huallpa tupac", "Huamanpallpa", "Huanca", "Huiracocha", "Ilyapa", "Inti cusi huallpa", "Ka-ata-killa", "Khuno", "Kon/con", "Maita", "Mama-allpa", "Mama-cocha", "Mama-oullo", "Mama-pacha", "Mama-quilla", "Maricanchi", "Pacari", "Pachacamac", "Pahuac maita", "Paricia", "Piguerao", "Punchau", "Quehuar tupac", "Quinuama", "Si", "Supay", "Thonapa", "Titu inca rimachi", "Titu manco capac", "Urcaguary", "Urcon,/urco", "Urpihua-chac", "Vicaquirao", "Viracocha inca", "Zaramamma", "Aclla", "Acllacuna", "Amaru", "Anyas", "Apachita", "Atoc", "Apichu", "Aquilla", "Auqui", "Canca", "Caquingora", "Chasqui", "Chicha", "Chuchau", "Chullpa", "Chunu", "Coca", "Cocohuay", "Coya", "Cui", "Cuntur", "Curaca", "Cusi", "Cusichaca", "Guacamaya", "Huallpa", "Huaman, Guaman", "Ichu", "Inchic", "Inti", "Killa", "Mamacona", "Mani", "Micos", "Nusta", "Nyunyuma", "Ozcollo", "Pacay", "Pachacutec", "Pahuac", "Palla", "Palta", "Pampa", "Papa", "Pariapichiu", "Pisco", "Pitahaya", "Pucara", "Puma", "Poma", "Puna", "Purutu", "Quenti", "Quero", "Sapallu", "Sinchi", "Suri", "Suyuntu", "Taruca", "Tocco", "Topo", "Totora", "Tupac", "Uchu", "Uritu", "Urpi", "Ussun", "Uturuncu", "Vicuna", "Yaku", "Yupanqui", "Yutu" ];
+
+	return randomArrayElement(aztecIncaMayaNames) + " " + randomArrayElement(aztecIncaMayaNames);
+}
+
+// Source: The Cyanid game
+function generateNecromanticName() {
+	var prefixes = ["Brainy", "Jack", "Rott", "Rigor", "Forever", "Rip", "Cut 'n' Killed", "Toby", "Limbo Pete", "Toolate", "Jawbone", "Was", "Almost-A-Ghost", "Slack", "Drool", "Unknown", "Mr. Dead", "Halo", "Socket", "Smelly", "No More", "The Late", "Fashionably Late", "Munch", "Previous", "Morbidly", "Stone", "Dirt", "Corpse", "Carrion", "Cranium", "Rib", "Brain", "Rot", "Gravel", "Plague", "Casket", "Limb", "Worm", "Coffin", "Spine", "Pebble", "Bone", "Marrow", "Carnivore", "Spine", "Mud", "Slime", "Ear", "Grave", "Tomb", "Ivan", "Vlad", "Argyle", "Conrad", "Steffan", "Ulric", "Brian", "Helmut", "Thorgrim", "Oswald", "Robin", "Billy", "Sammy", "Patrick", "Rex", "Charles", "Frank", "Stein", "Sten", "Sikvor", "Pinoch", "Gregor", "Yngve", "Armond", "Perry", "Ior", "Gui", "Montag", "Atlach", "Geomideer", "Bokrihoot", "Aerosnot", "Ghastu", "Gugohoot", "Bait", "Spud", "Cootie", "Guapo", "Igor", "Ivan", "Nowbah", "Gorlarg", "Harmyrk", "Grolack", "Warlack", "Jarluck", "Hoktusk", "Growarg", "Ilkurg", "Simlarg", "Sowarg", "Wurwarg", "Skokurg", "Khikin", "Khakin", "Harmarg", "Skofang", "Groskusk", "Glummarg", "Lorlag", "Harkurg", "Wollack", "Vorgen", "Kriluck", "Markin", "Kantarg", "Morluck", "Jorskusk", "Krimlarg", "Morwarg", "Wulskusk", "Varmyrk", "Karkurg", "Glumtusk", "Logan", "Amaris", "Ishmael", "Micah", "Caleb", "Joram", "Uzziah", "Merodach", "Holofernes", "Othniel"];
+
+	var postfixes = ["the Nine Fingered", "Eager", "Bloodless", "the Stumbler", "Stepstool", "Forever Calvin", "Shoemaker", "Hearted", "Mortis", "the Hungry One", "the Groaner", "Skullcracker", "in the Shadows", "the Late", "the Lifeless", "Dearly-departed", "One-shoe", "Number Two Fan", "Dress Rippers", "NoEars", "Noeyes", "the Scarce", "Guts", "Coffin", "Splinter", "the Dead", "Stillwalkin'", "Daddy", "Idle", "Gone Missing", "Faboulous", "Blanket", "Bugeater", "Mortis", "the Slayer", "the Impaler", "the Punisher", "the Killer", "the Conqueror", "the Vanquisher", "the Hunter", "the Stalker", "the Haunter", "the Predator", "the Murderor", "the Champion", "the Cold-hearted", "the Angry", "the Usurper", "the Tyrant", "the Mean", "the Feared", "the Terror", "the Wrathful", "the Cruel", "von Broken", "the Stern", "the Butcher", "the Mutilator", "the Unmatched", "the Unrivalled", "the Kinslayer", "the Despised", "the Demonhunter", "the Dragonslayer", "the Grim", "the Maimer", "the Orator", "the Blooddrinker", "the Terrible", "the Unjust", "the Hero", "the Villian", "the Faithless", "the Returned", "the Cadaverous", "the Mouldering", "the Disinterred", "the Haunter", "the Revived", "the Horrible", "the Decrepit", "the Rapid", "the Handsome", "the Awaker", "the Wise", "Patch", "Stitch", "the Unstoppable", "the Sad", "the Howler", "the Beast", "Whitefang", "Whitemane", "Blacktusk", "Gray", "the Cursed", "Rendall", "Channing", "Botolf", "Weylyn", "Mingan", "Woolsey", "Lowell", "Phellan", "Remus", "Lycaeus", "Romoulus", "Fenrir", "Redfang", "Redclaws", "Paws", "Rugtail", "the Furry", "Whitefur", "Bluefur", "the Roarer", "the Growler", "Snarl", "Twotails", "Fangless", "the Tailwager"];
+
+	return randomArrayElement(prefixes) + " " + randomArrayElement(postfixes);
+}
+
+// Source: http://www.ellipsis.cx/~liana/names/norse/landnamabok.html
+function generateNorseName() {
+	var norseNames = ["Arngeirr", "Ármódr", "Ásbrandr", "Áskell", "Áslákr", "Bergr", "Brúni", "Bryniólfr", "Bodmódr", "Borkr", "Finnbogi", "Galti", "Geirr", "Gellir", "Gestr", "Gnúpr", "Grímólfr", "Gríss", "Gudleifr", "Gunniorn", "Gunnlaugr", "Gunnólfr", "Hallkell", "Hákon", "Hávardr", "Hermundr", "Hialti", "Hiorleifr", "Hiorr", "Hrafnkell", "Hrani", "Hreidarr", "Hróarr", "Ingólfr", "Ívarr", "Karl", "Kálfr", "Kárr", "Kiartan", "Klaengr", "Kodrán", "Kolgrímr", "Kolr", "Konáll", "Morór", "Oddi", "Otkell", "Raudr", "Rúnólfr", "Sigfúss", "Skídi", "Skúli", "Skúmr", "Steinarr", "Steinmódr", "Steinrodr", "Styrmir", "Sumarlidi", "Svartr", "Svertingr", "Saemundr", "Teitr", "Úlfar", "Úlfhedinn", "Valthiólfr", "Vestarr", "Vigfúss", "Thórhaddr", "Thorgestr", "Thórormr", "Thorvidr", "Adils", "Arnbiorn", "Arnmódr", "Ásmólfr", "Bolli", "Bolverkr", "Dufthakr", "Finni", "Finnvardr", "Flóki", "Gautr", "Geiri", "Geirrodr", "Gils", "Grani", "Haflidi", "Hafr", "Hallgrímr", "Halli", "Haukr", "Hálfdan", "Hárekr", "Hlodver", "Hródgeirr", "Hrómundr", "Hraerekr", "Hórdr", "Ísleifr", "Ísraudr", "Jósteinn", "Jokull", "Karli", "Kleppiárn", "Kollsveinn", "Máni", "Niáll", "Oddleifr", "Pétr", "Snaebiorn", "Steinbiorn", "Steinthórr", "Svarthofdi", "Sveinungr", "Sólmundr", "Tanni", "Tiórvi", "Tyrfingr", "Vermundr", "Vestmadr", "Vébrandr", "Végestr", "Véthormr", "Vífill", "Thidrandi", "Thiódólfr", "Thiódrekr", "Throstr", "Aevarr", "Orlygr", "Olmódr", "Alrekr", "Arinbiorn", "Arnaldr", "Arnoddr", "Arnrídr", "Audólfr", "Álfgeirr", "Áli", "Áni", "Árni", "Ási", "Bárekr", "Beinir", "Biartmarr", "Biólan", "Biornólfr", "Bótólfr", "Brondólfr", "Dagr", "Dálkr", "Eidr", "Eindridi", "Endridi", "Erlendr", "Erlingr", "Erpr", "Fridleifr", "Fródi", "Gamli", "Geirleifr", "Geirólfr", "Geirsteinn", "Geirthiólfr", "Gísl", "Glaedir", "Gormr", "Greniadr", "Grettir", "Grímkell", "Griótgardr", "Gudrodr", "Gyrdr", "Hafthórr", "Haki", "Hallgeirr", "Hamall", "Hásteinn", "Hávarr", "Hergils", "Herrodr", "Hersteinn", "Hlenni", "Hreinn", "Hrifla", "Hrolleifr", "Hrosskell", "Hrói", "Hrútr", "Ingimundr", "Ísólfr", "Kadall", "Kali", "Ketilbiorn", "Kniúkr", "Knottr", "Kolbiorn", "Kolskeggr", "Kvistr", "Kýlan", "Lambi", "Leidólfr", "Ormarr", "Ósvaldr", "Páll", "Sámr", "Skapti", "Skarphedinn", "Skefill", "Skioldúlfr", "Skopti", "Skorri", "Skaeringr", "Snortr", "Sóti", "Starkadr", "Starri", "Stórólfr", "Styrbiorn", "Tindr", "Úlfliótr", "Valbrandr", "Váli", "Verlidi", "Véleifr", "Vésteinn", "Vidarr", "Víkingr", "Thorfidr", "Thorgautr", "Thórálfr", "Ogmundr", "Ondóttr", "Adalsteinn", "Afavldr", "Alfarinn", "Arnis", "Arnkell", "Arnlaugr", "Arnliótr", "Arnsteinn", "Arnthórr", "Áskr", "Audr", "Ádám", "Ásgautr", "Ásrodr", "Ásvaldr", "Ávaldi", "Ávaldr", "Ávanger", "Bardi", "Bauger", "Bálki", "Bekan", "Briningr", "Biarnhedinn", "Biálfi", "Biólfr", "Blaeinger", "Bogi", "Bragi", "Brandi", "Brattr", "Breidr", "Broddr", "Brúsi", "Darri", "Drafli", "Dufnall", "Dufniall", "Dugfúss", "Dýri", "Eldgrímr", "Eldiárn", "Elfrádr", "Ellidagrímr", "Eyfrodr", "Eyiarr", "Eylaugr", "Eymundr", "Eythiófr", "Fálki", "Finngeirr", "Fleinn", "Forni", "Freysteinn", "Freyvidr", "Fridmundr", "Fostólfr", "Gardarr", "Gaukr", "Gautrekr", "Gálmr", "Geitir", "Giafvaldr", "Gripr", "Gudthormr", "Gufi", "Gunnvaldr", "Guttormr", "Hafgrímr", "Hafliótr", "Halladr", "Hallfredr", "Hallgils", "Hallormr", "Hardnefr", "Harri", "Háleygr", "Há1fr", "Háls", "Heggr", "Herfinnr", "Hergrímr", "Herlaugr", "Hiallkárr", "Hiálmólfr", "Hiortr", "Hnaki", "Holti", "Hólmkell", "Hradi", "Hrafsi", "Hrollaugr", "Hrossbiorn", "Hródmarr", "Hródólfr", "Hundi", "Hundólfr", "Húnbogi", "Húnrodr", "Hvati", "Hyrningr", "Haeringr", "Haengr", "Hoggvandill", "Ingvarr", "Játmundr", "Játvardr", "Jófreidr", "Jólgeirr", "Jósurr", "Kalman", "Kiaran", "Kiotvi", "Klaufi", "Klyppr", "Knorr", "Kormákr", "Kóri", "Krumr", "Kúgaldi", "Melpatrikr", "Módólfr", "Mottull", "Naddoddr", "Nagli", "Narfi", "Nefsteinn", "Nereidr", "Nikolás", "Nikulás", "Oddbiorn", "Oddgeirr", "Oddmar", "Óblaudr", "Óli", "Óraekia", "Óspakr", "Ósvífr", "Ótryggr", "Patrekr", "Ragi", "Ragnarr", "Raudúlfr", "Raumr", "Rádormr", "Reistr", "Reyrketill", "Rodrekr", "Rognvaldr", "Rongudr", "Saxi", "Sigarr", "Sigfastr", "Sigtryggr", "Sigvaldi", "Skagi", "Skamkell", "Skati", "Skálpr", "Skialdbiorn", "Skiálgr", "Skorageirr", "Skólmr", "Smidkell", "Smidr", "Sokki", "Stafngrímr", "Steinfidr", "Steini", "Styrkárr", "Styrr", "Súlki", "Svanr", "Svardkell", "Svartkell", "Svávarr", "Sveinn", "Saebiorn", "Saemingr", "Sokkólfr", "Solgi", "Solvarr", "Soxólfr", "Torrádr", "Tryggvi", "Úlfkell", "Vadi", "Vestlidi", "Vébiorn", "Véfodr", "Vékell", "Véthorn", "Vilbradr", "Vilgeirr", "Vígbiódr", "Víglundr", "Vígsterkr", "Thangbrandr", "Thengill", "Thiódarr", "Thióstarr", "Thióstólfr", "Thorgnýr", "Thorliótr", "Thórhalli", "Thrasi", "Thráinn", "Ogurr", "Ongull" ];
+
+	return randomArrayElement(norseNames) + randomArrayElement(names)
+}
+
+function generateNurgleName() {
+	return generateChaosName();
+}
+
+function generateOgreName() {
+	return randomArrayElement([generateHumanName, generateGoblinName])();
+}
+
 // Source: http://www.uesp.net/wiki/Lore:Orc_Names
 function generateOrcName() {
 	var orcNames =
@@ -298,6 +334,31 @@ function generateOrcName() {
 	var foods = toArray("Ghoul, Goblin, Troll, Dread, Wolf, Tree, Fling, Amazon, Elf, Lizard, Rat, Beast, Zombie, Skeleton, Frog, Dworf, Viking, Mummy, Ogre, Vampire");
 
 	return randomArrayElement(orcNames) + " " + randomArrayElement(foods) + "-" + randomArrayElement(eatingStyles);
+}
+
+function generateSkavenName() {
+}
+
+function generateSlannName() {
+}
+
+function generateUndeadName() {
+	return generateNecromanticName();
+}
+
+function generateUnderworldName() {
+	return randomArrayElement([generateGoblinName, generateSkavenName])();
+}
+
+function generateVampireName() {
+	function createVampireName() {
+	}
+
+	return randomArrayElement([generateHumanName, createVampireName])();
+}
+
+function generateWoodElfName() {
+	return randomArrayElement(names) + " " + randomArrayElement(genericElfNames);
 }
 
 function generateNewPlayerName() {
@@ -346,7 +407,7 @@ function generateNewPlayerName() {
 	} else if (isUnderworldTeam()) {
 		return generateUnderworldName();
 	} else if (isVampireTeam()) {
-		return generateName();
+		return generateVampireName();
 	} else {
 		return "???";
 	}
