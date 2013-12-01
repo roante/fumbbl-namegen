@@ -233,24 +233,22 @@ function generateElfName() {
 
 // Source: http://www.paper-dragon.com/fantasyland/orcname.html
 function generateGoblinName() {
-	var gobboSet1 = [ "ash", "barge", "barn", "bart", "barty", "beetle", "bitti", "blod", "bog", "bolb", "brittl", "bug", "bum", "car", "clobber", "dagy", "dark", "dest", "dhak", "dher", "farty", "fatty", "filth", "flab", "frad", "frak", "frowl", "gab", "gan", "gartle", "ghul", "goo", "gorgol", "gree", "grill", "grim", "grit", "grog", "grot", "growl", "grull", "grut", "hang", "hurt", "iggy", "ithy", "johd", "karg", "killy", "krull", "lagg", "mor", "mugg", "mumph", "nar", "narg", "naz", "non", "oggy", "piff", "pipi", "plop", "pork", "pug", "pul", "punch", "rock", "rot", "sart", "scab", "scree", "shag", "shak", "skank", "skeg", "slag", "slig", "slime", "snot", "snuff", "squi", "tar", "tark", "trob", "ug", "uggn", "ugly", "undy", "uz", "uzi", "vert", "vom", "wast", "waz", "xak", "yarl", "zar", "zarn", "zog", "zug" ];
+	var gobboSet1 = ["ash", "barge", "barn", "bart", "barty", "beetle", "bitti", "blod", "bog", "bolb", "brittl", "bug", "bum", "car", "clobber", "dagy", "dark", "dest", "dhak", "dher", "farty", "fatty", "filth", "flab", "frad", "frak", "frowl", "gab", "gan", "gartle", "ghul", "goo", "gorgol", "gree", "grill", "grim", "grit", "grog", "grot", "growl", "grull", "grut", "hang", "hurt", "iggy", "ithy", "johd", "karg", "killy", "krull", "lagg", "mor", "mugg", "mumph", "nar", "narg", "naz", "non", "oggy", "piff", "pipi", "plop", "pork", "pug", "pul", "punch", "rock", "rot", "sart", "scab", "scree", "shag", "shak", "skank", "skeg", "slag", "slig", "slime", "snot", "snuff", "squi", "tar", "tark", "trob", "ug", "uggn", "ugly", "undy", "uz", "uzi", "vert", "vom", "wast", "waz", "xak", "yarl", "zar", "zarn", "zog", "zug"];
 
-	var gobboSet2 = [ "ale", "and", "bat", "beer", "bi", "bin", "blood", "bog", "brittle", "bug", "butt", "buy", "chest", "clib", "dag", "dead", "derg", "dip", "dirg", "dirk", "dirt", "dirty", "dug", "duggy", "dum", "ed", "erl", "fag", "fang", "fart", "farty", "fat", "fatty", "filthy", "frag", "fright", "frum", "gag", "ger", "gimp", "git", "gle", "goo", "goon", "graka", "green", "grim", "grimy", "grin", "grol", "grose", "gru", "gun", "hoo", "humi", "hurt", "icky", "ig", "iggy", "in", "it", "kil", "krah", "le", "marl", "mean", "miggy", "mork", "mud", "niggy", "nose", "og", "oth", "pain", "parj", "piss", "ple", "prob", "puke", "pump", "ra", "rard", "scabby", "sludge", "smell", "smig", "stak", "stik", "the", "turd", "ug", "undy", "verf", "wimpy", "wing", "wipe", "yack", "yarh", "yee", "zigg" ];
+	var gobboSet2 = ["ale", "and", "bat", "beer", "bi", "bin", "blood", "bog", "brittle", "bug", "butt", "buy", "chest", "clib", "dag", "dead", "derg", "dip", "dirg", "dirk", "dirt", "dirty", "dug", "duggy", "dum", "ed", "erl", "fag", "fang", "fart", "farty", "fat", "fatty", "filthy", "frag", "fright", "frum", "gag", "ger", "gimp", "git", "gle", "goo", "goon", "graka", "green", "grim", "grimy", "grin", "grol", "grose", "gru", "gun", "hoo", "humi", "hurt", "icky", "ig", "iggy", "in", "it", "kil", "krah", "le", "marl", "mean", "miggy", "mork", "mud", "niggy", "nose", "og", "oth", "pain", "parj", "piss", "ple", "prob", "puke", "pump", "ra", "rard", "scabby", "sludge", "smell", "smig", "stak", "stik", "the", "turd", "ug", "undy", "verf", "wimpy", "wing", "wipe", "yack", "yarh", "yee", "zigg"];
 	
-	var gobboSet3 = [
-"barrel", "be", "bok", "bomb", "bottom", "boy", "bref", "bum", "burr", "butt", "cat", "clutz", "cotz", "crack", "dead", "deg", "diggy", "dug", "dum", "er", "ert", "ex", "ey", "fad", "fang", "filth", "foot", "fud", "gag", "git", "gle", "gloop", "good", "grime", "grit", "grot", "grule", "grunt", "guck", "gun", "guss", "gutt", "hed", "horned", "humi", "keg", "killer", "killy", "kun", "lad", "lard", "lence", "ler", "lip", "meg", "mid", "mirt", "moggy", "morn", "muck", "mud", "nacker", "nail", "ni", "noose", "nose", "ork", "otis", "ottle", "oz", "puss", "rat", "rung", "sarg", "scum", "skin", "slime", "slip", "sludge", "snak", "snot", "ster", "strong", "teg", "toof", "turd", "u", "um", "ungy", "urt", "vomit", "wart", "waste", "wee", "wert", "wipe", "yed", "yert", "zed", "ziggy" ];
+	var gobboSet3 = ["barrel", "be", "bok", "bomb", "bottom", "boy", "bref", "bum", "burr", "butt", "cat", "clutz", "cotz", "crack", "dead", "deg", "diggy", "dug", "dum", "er", "ert", "ex", "ey", "fad", "fang", "filth", "foot", "fud", "gag", "git", "gle", "gloop", "good", "grime", "grit", "grot", "grule", "grunt", "guck", "gun", "guss", "gutt", "hed", "horned", "humi", "keg", "killer", "killy", "kun", "lad", "lard", "lence", "ler", "lip", "meg", "mid", "mirt", "moggy", "morn", "muck", "mud", "nacker", "nail", "ni", "noose", "nose", "ork", "otis", "ottle", "oz", "puss", "rat", "rung", "sarg", "scum", "skin", "slime", "slip", "sludge", "snak", "snot", "ster", "strong", "teg", "toof", "turd", "u", "um", "ungy", "urt", "vomit", "wart", "waste", "wee", "wert", "wipe", "yed", "yert", "zed", "ziggy"];
 
 	var gobboNameAlternatives = [
-		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2)},
-		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)},
-		function() {randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3)},
-
-		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1)},
-		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3)},
-		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)}
+		function() { return randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2); },
+		function() { return randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3); },
+		function() { return randomArrayElement(gobboSet1) + randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3); },
+		function() { return randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1); },
+		function() { return randomArrayElement(gobboSet2) + randomArrayElement(gobboSet3); },
+		function() { return randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3); }
 	];
 
-	return (randomArrayElement(gobboNameAlternatives)()).capitalize();
+	return randomArrayElement(gobboNameAlternatives)().capitalize();
 }
 
 // Sources:
