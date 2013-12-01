@@ -56,23 +56,23 @@ var names = ["Aache", "Aanwas", "Aaron", "Abaet", "Abarden", "Abbadon", "Abbe", 
 // Got these results form the REST API:
 // http://fumbbl.com/xml:roster?id=[40+]
 
-function isAmazonTeam() { // team id: 41
+function isAmazonTeam() {
 	var linewomanIdInRoster = 2812;
 	return checkIfRosterHasPositionalWithId(linewomanIdInRoster);
 }
 
-function isChaosTeam() { // team id: 42
+function isChaosTeam() {
 	var chaosMinotaurIdInRoster = 2818;
 	return checkIfRosterHasPositionalWithId(chaosMinotaurIdInRoster);
 }
 
-function isChaosDwarfTeam() { // team id: 43
+function isChaosDwarfTeam() {
 	var hobgoblinIdInRoster = 2857;
 	return checkIfRosterHasPositionalWithId(hobgoblinIdInRoster);
 }
 
 function isChaosPactTeam() {
-	var maruderIdInRoster = 2750;
+	var maruderIdInRoster = 2987;
 	return checkIfRosterHasPositionalWithId(maruderIdInRoster);
 }
 
@@ -202,7 +202,7 @@ function generateChaosDwarfName() {
 
 function generateChaosPactName() {
 	var alternatives = [generateChaosName, generateDarkElfName, generateGoblinName, generateSkavenName];
-	return randomElementOf(alternatives)();
+	return randomArrayElement(alternatives)();
 }
 
 var genericElfNames = ["Binalais", "Borel", "Byloraas", "Dorha", "Enehiduz", "Eviod", "Idemo", "Idobir", "Idxek", "Iredod", "Izerin", "Kirta", "Lihod", "Naronuab", "Niril", "Noreniol", "Oreky", "Oriratu", "Otiraroc", "Rabaniak", "Riden", "Terurtob", "Uranetar", "Vise", "Zirykram", "Arkit", "Atova", "Cusvu", "Didri", "Edonaki", "Etaoc", "Etina", "Ibaad", "Icbav", "Ireforer", "Loris", "Muhydac", "Naneb", "Neratom", "Odeda", "Ohciz", "Oriid", "Radet", "Suha", "Taranef", "Tytozkar", "Ulbic", "Umaban", "Umakino", "Yiduseid", "Ahdar", "Akitamal", "Anrad", "Cale", "Darazet", "Ekilanuk", "Ekysodo", "Hyxir", "Idarikal", "Irareyi", "Izren", "Leredzar", "Nahirvon", "Relerar", "Rini", "Rokaxnax", "Ruvixad", "Sadofise", "Uhanuza", "Uloret", "Uraot", "Yudne", "Zavro", "Zeravin", "Zirumoir", "Acute", "Adaca", "Adera", "Anyol", "Atamu", "Atarebe", "Atleh", "Danu", "Dinko", "Dirle", "Emasa", "Eryis", "Exoic", "Hebeliih", "Kite", "Oller", "Oniar", "Otarebod", "Otybura", "Ranovaoh", "Rirel", "Risar", "Urfer", "Vacirlur", "Zorre", "Aenario", "Alariell", "Alit", "Ana", "Elthario", "Asarni", "Finuba", "Imri", "Selafy", "of the Annuli", "Tecli", "Tyrio", "Caradrya", "Korhi", "Arie", "Drych", "Naestr", "Araha", "Orio", "Scarlo", "Durth", "of House Arefo", "Vali", "Amendi", "of House Birlith", "Agno", "of House Ciran", "Silonto", "Ran", "of House Daerleo", "Torendi", "of House Daerleo", "Falanda", "of House Eresti", "Cavinde", "of House Feltantha", "Erefo", "Hali", "of House Glora", "Mormaca", "Ravandi", "Dolwe", "of House Hara", "Gildiri", "Imho", "Narie", "Silonto", "of House Leva", "Foro", "of House Melian", "Olani", "Amha", "of House Mithalei", "Foro", "Cirith", "Darien", "Eldri", "Finduila", "Gallin", "Marienn", "Maruvie", "Ness", "Pelgran", "Tiria", "Ullian", "Valaromr", "Aesalao", "Aesala", "Aesali", "Aesalo", "Aesalio", "Agra", "Agre", "Agrenda", "Agretha", "Agrethe", "Agretho", "Agro", "Agronda", "Agrotha", "Agrotho", "Alan", "Alan", "Alathe", "Alatho", "Altron", "Altroni", "Alud", "Alud", "Aluvae", "Aluvan", "Amandala", "Amandila", "Amdare", "Amena", "Amene", "Amona", "Amono", "Amrafa", "Amrawa", "Amrawa", "Amrawe", "Anatho", "Andathe", "Andithe", "Anditho", "Angan", "Angan", "Anitho", "Aono", "Aonor", "Aosalio", "Aovan", "Atha", "Athela", "Athele", "Athola", "Atholo", "Avandre", "Avandro", "Calan", "Calan", "Calare", "Calaro", "Cavanda", "Cavande", "Cavatha", "Cavathe", "Cavatho", "Cavatho", "Cavinda", "Cavinde", "Cavindo", "Daladi", "Dalcora", "Dalcorat", "Dalcori", "Dalie", "Dali", "Dallin", "Daluvie", "Dalvain", "Dav", "Dava", "Davan", "Davandre", "Davandro", "Davani", "Davi", "Dilet", "Dilethe", "Dilonde", "Dimonde", "Dolena", "Dolenat", "Dolona", "Dolonat", "Dolwe", "Dolwo", "Edalat", "Edathe", "Edilat", "Edithe", "Editho", "Edr", "Edri", "Eldr", "Eldra", "Eldri", "Eldri", "Endalo", "Endilo", "Epon", "Eponi", "Eredet", "Erodot", "Fal", "Falama", "Fali", "Faluvae", "Faluvie", "Faluvio", "Farethe", "Farotho", "Filami", "Fil", "Filimi", "Filivi", "Firithi",
@@ -211,7 +211,7 @@ var genericElfNames = ["Binalais", "Borel", "Byloraas", "Dorha", "Enehiduz", "Ev
 
 // Source: http://www.seventhsanctum.com/generate.php?Genname=darkelfnamer
 function generateDarkElfName() {
-	var durchiiNames = concat(genericElfNames, ["Quickstab", "Shadowblade", "Lightingslash", "Quietstep", "Lionfeet"]);
+	var durchiiNames = genericElfNames.concat(["Quickstab", "Shadowblade", "Lightingslash", "Quietstep", "Lionfeet"]);
 	
 	return randomArrayElement(names) + " " + randomArrayElement(durchiiNames);
 }
@@ -250,7 +250,7 @@ function generateGoblinName() {
 		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)}
 	];
 
-	return randomArrayElement(gobboNameAlternatives)().capitalize();
+	return (randomArrayElement(gobboNameAlternatives)()).capitalize();
 }
 
 // Sources:
@@ -266,7 +266,7 @@ function generateHalflingName() {
 
 // Source: http://en.wikipedia.org/wiki/Royal_and_noble_ranks
 function generateHighElfName() {
-	var highElfNames = concat(genericElfNames, ["Prince", "Baron", "Captain", "Leader", "Noble", "Lord", "Emperror", "Czar", "High King", "Archduke", "Duke", "Dauphin", "Infante", "Elector", "Marquis", "Landgrave", "Count", "Viscount", "Freiherr", "Knight", "Dominus", "Vidame", "Viceroy", "King"]);
+	var highElfNames = genericElfNames.concat(["Prince", "Baron", "Captain", "Leader", "Noble", "Lord", "Emperror", "Czar", "High King", "Archduke", "Duke", "Dauphin", "Infante", "Elector", "Marquis", "Landgrave", "Count", "Viscount", "Freiherr", "Knight", "Dominus", "Vidame", "Viceroy", "King"]);
 	
 	return randomArrayElement(highElfNames) + " " + randomArrayElement(names);
 
