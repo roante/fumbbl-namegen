@@ -17,7 +17,6 @@
  * @version 2.0RC1
  */
 
-// --- utils.js ---------------------------------------------------------------
 String.prototype.capitalize = function() {
 	return this.charAt(0).toUpperCase() + this.slice(1);
 }
@@ -261,7 +260,7 @@ function generateGoblinName() {
 		function() {randomArrayElement(gobboSet2) + randomArrayElement(gobboSet1) + randomArrayElement(gobboSet3)}
 	];
 
-	return randomArrayElement(gobboNames)().capitalize();
+	return randomArrayElement(gobboNameAlternatives)().capitalize();
 }
 
 // Sources:
@@ -336,10 +335,23 @@ function generateOrcName() {
 	return randomArrayElement(orcNames) + " " + randomArrayElement(foods) + "-" + randomArrayElement(eatingStyles);
 }
 
+// Source: http://s6.zetaboards.com/The_UnderEmpire/topic/1145980/1/ (Book of the Rat)
 function generateSkavenName() {
+	var prefixes = ["Azh", "Azar", "Arr", "Baz", "Bur", "Critt", "Dur", "Frik", "Gaz", "Gnaw", "Gesht", "Gris", "Hask", "Iki", "Khak", "Krat", "Kirki", "Krits", "Malk", "Mass", "Mors", "Nurg", "Pask", "Praz", "Rass", "Ratt", "Rhi", "Rusi", "Skirs", "Skee", "Skleet", "Skre", "Skrit", "Snee", "Than", "Thro", "Thra", "Tzar", "Var", "Vas", "Vels", "Vrink", "Vermi", "Vitt", "Viskt", "Voss"];
+
+	var postfixes = ["ak", "az", "assik", "at", "ck", "cin", "drak", "dwell", "flem", "hakk", "hisk", "is", "iskikk", "k", "kin", "kis", "kual", "lik", "litch", "matz", "nagar", "naard", "ner", "neth,", "nik", "quee", "quol", "r", "rik", "rin", "rit", "risk", "sch", "skabak", "skik", "skittar", "sisk", "stisk", "t", "tabak", "tar", "th", "zarr", "zel" ];
+	
+	var skavenNameAlternatives = [
+		function() {randomArrayElement(prefixes) + randomArrayElement(postfixes)},
+		function() {randomArrayElement(prefixes) + randomArrayElement(postfixes) + randomArrayElement(postfixes)}
+	];
+
+	return randomArrayElement(skavenNameAlternatives)();
 }
 
+// TODO I have to work a bit on this now :-)
 function generateSlannName() {
+	return generateLizardmenName();
 }
 
 function generateUndeadName() {
@@ -350,8 +362,11 @@ function generateUnderworldName() {
 	return randomArrayElement([generateGoblinName, generateSkavenName])();
 }
 
+// Source: http://vampirenamegenerator.net/list-of-vampire-names.html
 function generateVampireName() {
 	function createVampireName() {
+		var vampireNames = ["Angeline", "Armenia", "Apple", "Asema", "Aswang", "Beatrix", "Belinda", "Brie", "Bruxa", "Carmina", "Cherry", "Clarita", "Churel", "Demonia", "Damsel", "Dragonfly", "Elphina", "Elenor", "Emma", "Frita", "Floris", "Fatima", "Grimina", "Gem", "Gwin", "Habitha", "Hebkya", "Harlot", "Harley", "Icelandia", "Imeena", "Ilene", "Juniper", "Jayde", "Jocelyn", "Katreena", "Kallee", "Karmin", "Kali", "Lucia", "Lament", "Leeta", "Lilith", "Magwina", "Margorie", "Maxine", "Norway", "Nylora", "Narween", "Ophelia", "Opal", "Oma", "Princessa", "Pearl", "Pamela", "Paprika", "Quintessa", "Quota", "Qutie", "Ramona", "Rubia", "Riley", "Samantha", "Sybil", "Strawberri", "Thistle", "Trik", "Tabitha", "Ulsa", "Ukara", "Umona", "Upiorzyca", "Viktoria", "Veronika", "Violet", "Wysteria", "Winona", "Willow", "Xyla", "Xoxo", "Xenia", "Yureka", "Yoko", "Yellow", "Zen", "Zofia", "Zolona", "Archer", "Antone", "Adam", "Asema", "Bryce", "Bartholomew", "Bartram", "Carmine", "Chandler", "Charles", "Chiang-Shi", "Damon", "Drake", "Darth", "Dhampir", "Emmit", "Eulisses", "Everit", "Frederik", "Fromir", "Fark", "Grim", "Gastly", "Granger", "Hanzel", "Heinrik", "Hitch", "Hunter", "Isaiah", "Isaac", "Incubus", "Jasper", "Jaymes", "Jeronimo", "Klark", "Karver", "Keetes", "Lucius", "Luke", "Louis", "Mitch", "Maxim", "Mitrik", "Nicholai", "Norman", "Nayte", "Otto", "Omar", "Omen", "Petrik", "Pritchard", "Parch", "Prince", "Quint", "Quye", "Quway", "Romulus", "Richard", "Rumlar", "Rakshasas", "Redcap", "Samuel", "Savant", "Sax", "Tristan", "Tack", "Trixter", "Ulrik", "Uberto", "Umbri", "Upir", "Viktor", "Vance", "Vome", "Wright", "Wendell", "Winmore", "Xix", "Xander", "Xensor", "Yulis", "Yao", "Ymo", "Zero", "Zindo", "Zulu" ];
+		return randomArrayElement(names) + " " + randomArrayElement(vampireNames);
 	}
 
 	return randomArrayElement([generateHumanName, createVampireName])();
@@ -409,7 +424,7 @@ function generateNewPlayerName() {
 	} else if (isVampireTeam()) {
 		return generateVampireName();
 	} else {
-		return "???";
+		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have there! :S";
 	}
 }
 
