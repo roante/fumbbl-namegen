@@ -87,7 +87,7 @@ function isDwarfTeam() {
 }
 
 function isElfTeam() {
-	var linemanIdInRoster = 2707;
+	var linemanIdInRoster = 2871;
 	return checkIfRosterHasPositionalWithId(linemanIdInRoster);
 }
 
