@@ -77,8 +77,8 @@ function isChaosPactTeam() {
 }
 
 function isDarkElfTeam() {
-	var linemanIdInRoster = 2639;
-	return checkIfRosterHasPositionalWithId(linemanIdInRoster);
+	var assassinIdInRoster = 2862;
+	return checkIfRosterHasPositionalWithId(assassinIdInRoster);
 }
 
 function isDwarfTeam() {
