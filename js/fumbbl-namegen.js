@@ -132,7 +132,7 @@ function isNorseTeam() {
 }
 
 function isNurgleTeam() {
-	var rotterIdInRoster = 2697;
+	var rotterIdInRoster = 2910;
 	return checkIfRosterHasPositionalWithId(rotterIdInRoster);
 }
 
