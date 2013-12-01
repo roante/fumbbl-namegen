@@ -107,7 +107,7 @@ function isHighElfTeam() {
 }
 
 function isHumanTeam() {
-	var linemanIdInRoster = 2658;
+	var linemanIdInRoster = 2887;
 	return checkIfRosterHasPositionalWithId(linemanIdInRoster);
 }
 
@@ -117,7 +117,7 @@ function isKhemriTeam() {
 }
 
 function isLizardmenTeam() {
-	var skinkIdInRoster = 2663;
+	var skinkIdInRoster = 2896;
 	return checkIfRosterHasPositionalWithId(skinkIdInRoster);
 }
 
@@ -284,7 +284,7 @@ function generateKhemriName() {
 
 // Source: http://www.lowchensaustralia.com/names/incanames.htm
 function generateLizardmenName() {
-	var aztecIncaMayaNames = ["Acahuana", "Anahuarque", "Apocatequil", "Apacheta", "Apaec", "Apo-mayta", "Apu-illapu", "Apu-illapu", "Auqui amaru tupac", "Auqui maita", "Ayar", "Ayar-acar", "Ayar-cachi", "Ayar-colo", "Ayar-manco", "Axomamma", "Capac yupanqui", "Catequil", "Cava", "Cavillaca", "Chasca", "Chasca-coyllur", "Chic'ya", "Chimpu ocllo", "Cocomama", "Con", "Kon", "Coniraya", "Copacati", "Cuca", "Curi illpay", "Cuxi uarcay", "Ekkekko", "Epunamun", "Guachimines", "Guamansuri", "Huallpa rimachi", "Huallpa tupac", "Huamanpallpa", "Huanca", "Huiracocha", "Ilyapa", "Inti cusi huallpa", "Ka-ata-killa", "Khuno", "Kon/con", "Maita", "Mama-allpa", "Mama-cocha", "Mama-oullo", "Mama-pacha", "Mama-quilla", "Maricanchi", "Pacari", "Pachacamac", "Pahuac maita", "Paricia", "Piguerao", "Punchau", "Quehuar tupac", "Quinuama", "Si", "Supay", "Thonapa", "Titu inca rimachi", "Titu manco capac", "Urcaguary", "Urcon,/urco", "Urpihua-chac", "Vicaquirao", "Viracocha inca", "Zaramamma", "Aclla", "Acllacuna", "Amaru", "Anyas", "Apachita", "Atoc", "Apichu", "Aquilla", "Auqui", "Canca", "Caquingora", "Chasqui", "Chicha", "Chuchau", "Chullpa", "Chunu", "Coca", "Cocohuay", "Coya", "Cui", "Cuntur", "Curaca", "Cusi", "Cusichaca", "Guacamaya", "Huallpa", "Huaman, Guaman", "Ichu", "Inchic", "Inti", "Killa", "Mamacona", "Mani", "Micos", "Nusta", "Nyunyuma", "Ozcollo", "Pacay", "Pachacutec", "Pahuac", "Palla", "Palta", "Pampa", "Papa", "Pariapichiu", "Pisco", "Pitahaya", "Pucara", "Puma", "Poma", "Puna", "Purutu", "Quenti", "Quero", "Sapallu", "Sinchi", "Suri", "Suyuntu", "Taruca", "Tocco", "Topo", "Totora", "Tupac", "Uchu", "Uritu", "Urpi", "Ussun", "Uturuncu", "Vicuna", "Yaku", "Yupanqui", "Yutu"];
+	var aztecIncaMayaNames = ["Acahuana", "Anahuarque", "Apocatequil", "Apacheta", "Apaec", "Apo-mayta", "Apu-illapu", "Apu-illapu", "Auqui amaru tupac", "Auqui maita", "Ayar", "Ayar-acar", "Ayar-cachi", "Ayar-colo", "Ayar-manco", "Axomamma", "Capac yupanqui", "Catequil", "Cava", "Cavillaca", "Chasca", "Chasca-coyllur", "Chic'ya", "Chimpu ocllo", "Cocomama", "Con", "Kon", "Coniraya", "Copacati", "Cuca", "Curi illpay", "Cuxi uarcay", "Ekkekko", "Epunamun", "Guachimines", "Guamansuri", "Huallpa rimachi", "Huallpa tupac", "Huamanpallpa", "Huanca", "Huiracocha", "Ilyapa", "Inti cusi huallpa", "Ka-ata-killa", "Khuno", "Kon", "Con", "Maita", "Mama-allpa", "Mama-cocha", "Mama-oullo", "Mama-pacha", "Mama-quilla", "Maricanchi", "Pacari", "Pachacamac", "Pahuac maita", "Paricia", "Piguerao", "Punchau", "Quehuar tupac", "Quinuama", "Si", "Supay", "Thonapa", "Titu inca rimachi", "Titu manco capac", "Urcaguary", "Urcon", "Urco", "Urpihua-chac", "Vicaquirao", "Viracocha inca", "Zaramamma", "Aclla", "Acllacuna", "Amaru", "Anyas", "Apachita", "Atoc", "Apichu", "Aquilla", "Auqui", "Canca", "Caquingora", "Chasqui", "Chicha", "Chuchau", "Chullpa", "Chunu", "Coca", "Cocohuay", "Coya", "Cui", "Cuntur", "Curaca", "Cusi", "Cusichaca", "Guacamaya", "Huallpa", "Huaman, Guaman", "Ichu", "Inchic", "Inti", "Killa", "Mamacona", "Mani", "Micos", "Nusta", "Nyunyuma", "Ozcollo", "Pacay", "Pachacutec", "Pahuac", "Palla", "Palta", "Pampa", "Papa", "Pariapichiu", "Pisco", "Pitahaya", "Pucara", "Puma", "Poma", "Puna", "Purutu", "Quenti", "Quero", "Sapallu", "Sinchi", "Suri", "Suyuntu", "Taruca", "Tocco", "Topo", "Totora", "Tupac", "Uchu", "Uritu", "Urpi", "Ussun", "Uturuncu", "Vicuna", "Yaku", "Yupanqui", "Yutu"];
 
 	return randomArrayElement(aztecIncaMayaNames) + " " + randomArrayElement(aztecIncaMayaNames);
 }
