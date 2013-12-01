@@ -82,8 +82,8 @@ function isDarkElfTeam() {
 }
 
 function isDwarfTeam() {
-	var longbeardIdInRoster = 2643;
-	return checkIfRosterHasPositionalWithId(longbeardIdInRoster);
+	var trollSlayerIdInRoster = 2868;
+	return checkIfRosterHasPositionalWithId(trollSlayerIdInRoster);
 }
 
 function isElfTeam() {
@@ -218,7 +218,7 @@ function generateDarkElfName() {
 
 // Source: http://www.bugmansbrewery.com/tutorials/article/110-dwarf-names-warhammer-fluff/
 function generateDwarfName() {
-	var dwarfNames = toArray("Alaric, Algrimm, Alric, Baragor, Bardin, Belegar, Bel(e)gol, Borgin, Borm, Bradni, Brogar, Brokk, Brond(I), Bronn, Burlok, Cranneg, Darbli, Dargo, Dern, Dimrond, Dimzad, Dorin, Drong, Drumin, Durak, Duregar, Durgin, Dwinbar, Elmador, Enlag, Fenni, Fimbur, Finn, Furgil, Garil, Goddi, Gomrund, Gorazin, Gorim, Gorn, Gotrek, Gottri, Grim, Grimli, Grindol, Grom, Grond, Groth, Grum, Grumdin, Grundi, Grung, Grunni, Guttri, Haakon, Hadra, Harek, Hargin, Hargrim, Harok, Heganbor, Hergar, Hugnir, Hurgar, Kadri, Kadrin, Kallon, Kargun, Katalin, Kazadar, Kazgar, Kazran, Kazrik, Ketil, Kettri, Kragg, Krudd, Kurgan, Largs, Logan, Logazor, Lunn, Mendri, Mordin, Morek, Morgrim, Mundri, Norgrim, Okri, Oldor, Ragni, Rogni, Rorek, Rungni, Skag, Skaldor, Skalf, Skalli, Skorri, Sindri, Snorri, Stromni, Storri, Sundrim, Sven, Thingrim, Thori, Thrund, Thungni, Thurgrom, Thyk, Ulfar, Ulther, Vikram, Vragni, Yadri, Yanni, Yorri, Zamnil, Alrika, Askima, Astrid, Berta, Boria, Bredna, Brondra, Derna, Dorbi, Duree, Fenna, Freda, Friga, Gerta, Gottra, Grondi, Grunna, Harga, Helga, Helgar, Hunni, Kalea, Karelia, Karga, Karstin, Katrin, Kettra, Lakin, Lenka, Magda, Menni, Modra, Morga, Olka, Sifna, Sigrid, Sigrun, Skorina, Solveig, Sunni, Tarni, Tharma, Thindra, Thoda, Throlin, Trunni, Ulla, Vala, Valma, Vanyra, Zylra");
+	var dwarfNames = ["Alaric", "Algrimm", "Alric", "Baragor", "Bardin", "Belegar", "Bel(e)gol", "Borgin", "Borm", "Bradni", "Brogar", "Brokk", "Brond(I)", "Bronn", "Burlok", "Cranneg", "Darbli", "Dargo", "Dern", "Dimrond", "Dimzad", "Dorin", "Drong", "Drumin", "Durak", "Duregar", "Durgin", "Dwinbar", "Elmador", "Enlag", "Fenni", "Fimbur", "Finn", "Furgil", "Garil", "Goddi", "Gomrund", "Gorazin", "Gorim", "Gorn", "Gotrek", "Gottri", "Grim", "Grimli", "Grindol", "Grom", "Grond", "Groth", "Grum", "Grumdin", "Grundi", "Grung", "Grunni", "Guttri", "Haakon", "Hadra", "Harek", "Hargin", "Hargrim", "Harok", "Heganbor", "Hergar", "Hugnir", "Hurgar", "Kadri", "Kadrin", "Kallon", "Kargun", "Katalin", "Kazadar", "Kazgar", "Kazran", "Kazrik", "Ketil", "Kettri", "Kragg", "Krudd", "Kurgan", "Largs", "Logan", "Logazor", "Lunn", "Mendri", "Mordin", "Morek", "Morgrim", "Mundri", "Norgrim", "Okri", "Oldor", "Ragni", "Rogni", "Rorek", "Rungni", "Skag", "Skaldor", "Skalf", "Skalli", "Skorri", "Sindri", "Snorri", "Stromni", "Storri", "Sundrim", "Sven", "Thingrim", "Thori", "Thrund", "Thungni", "Thurgrom", "Thyk", "Ulfar", "Ulther", "Vikram", "Vragni", "Yadri", "Yanni", "Yorri", "Zamnil", "Alrika", "Askima", "Astrid", "Berta", "Boria", "Bredna", "Brondra", "Derna", "Dorbi", "Duree", "Fenna", "Freda", "Friga", "Gerta", "Gottra", "Grondi", "Grunna", "Harga", "Helga", "Helgar", "Hunni", "Kalea", "Karelia", "Karga", "Karstin", "Katrin", "Kettra", "Lakin", "Lenka", "Magda", "Menni", "Modra", "Morga", "Olka", "Sifna", "Sigrid", "Sigrun", "Skorina", "Solveig", "Sunni", "Tarni", "Tharma", "Thindra", "Thoda", "Throlin", "Trunni", "Ulla", "Vala", "Valma", "Vanyra", "Zylra"];
 
 	return randomArrayElement(names) + " " + randomArrayElement(dwarfNames);
 }
