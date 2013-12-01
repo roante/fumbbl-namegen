@@ -62,8 +62,8 @@ function isAmazonTeam() { // team id: 41
 }
 
 function isChaosTeam() {
-	var chaosWarriorIdInRoster = 2629;
-	return checkIfRosterHasPositionalWithId(chaosWarriorIdInRoster);
+	var chaosMinotaurIdInRoster = 2818;
+	return checkIfRosterHasPositionalWithId(chaosMinotaurIdInRoster);
 }
 
 function isChaosDwarfTeam() {
@@ -412,7 +412,7 @@ function generateNewPlayerName() {
 	} else if (isVampireTeam()) {
 		return generateVampireName();
 	} else {
-		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have there! :S";
+		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have here! (PS: Nuffle was here)";
 	}
 }
 
