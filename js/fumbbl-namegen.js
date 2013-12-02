@@ -157,7 +157,7 @@ function isSlannTeam() {
 }
 
 function isUndeadTeam() {
-	var sleketonIdInRoster = 2684;
+	var sleketonIdInRoster = 2928;
 	return checkIfRosterHasPositionalWithId(sleketonIdInRoster);
 }
 
@@ -166,14 +166,14 @@ function isUnderworldTeam() {
 	return checkIfRosterHasPositionalWithId(goblinIdInRoster);
 }
 
-function isWoodElfTeam() {
-	var linemanIdInRoster = 2689;
-	return checkIfRosterHasPositionalWithId(linemanIdInRoster);
-}
-
 function isVampireTeam() {
 	var vampireLordIdInRoster = 2699;
 	return checkIfRosterHasPositionalWithId(vampireLordIdInRoster);
+}
+
+function isWoodElfTeam() {
+	var linemanIdInRoster = 2934;
+	return checkIfRosterHasPositionalWithId(linemanIdInRoster);
 }
 
 var eatingStyles = ["chewer", "eater", "gor", "slayer", "smasher", "claw", "fury", "tooth", "burner", "pillager", "pox", "seer", "fever", "thul", "turd", "trapper", "deathbringer", "smasha", "fella", "arm", "dawner", "breaker", "mauler", "devourer", "belly", "bleeder", "brother", "thar", "basher", "stealer", "slaver", "maimer", "hunter", "flamer", "tyrant", "chopper", "burster"];
@@ -408,6 +408,8 @@ function generateNewPlayerName() {
 		return generateUnderworldName();
 	} else if (isVampireTeam()) {
 		return generateVampireName();
+	} else if (isWoodElfTeam()) {
+		return generateWoodElfName()
 	} else {
 		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have here! (PS: Nuffle was here)";
 	}
