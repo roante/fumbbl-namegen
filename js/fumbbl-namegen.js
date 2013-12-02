@@ -409,7 +409,7 @@ function generateNewPlayerName() {
 	} else if (isVampireTeam()) {
 		return generateVampireName();
 	} else if (isWoodElfTeam()) {
-		return generateWoodElfName()
+		return generateWoodElfName();
 	} else {
 		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have here! (PS: Nuffle was here)";
 	}
