@@ -97,8 +97,10 @@ function isGoblinTeam() {
 }
 
 function isHalflingTeam() {
-	var halflingIdInRoster = 2651;
-	return checkIfRosterHasPositionalWithId(halflingIdInRoster);
+	var halflingIdInBoxRoster = 2651;
+	var halflingIdInLRoster = 2881;
+	return checkIfRosterHasPositionalWithId(halflingIdInBoxRoster) ||
+		checkIfRosterHasPositionalWithId(halflingIdInLRoster);
 }
 
 function isHighElfTeam() {
