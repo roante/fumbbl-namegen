@@ -92,7 +92,7 @@ function isElfTeam() {
 }
 
 function isGoblinTeam() {
-	var goblinIdInRoster = 2648;
+	var goblinIdInRoster = 2875;
 	return checkIfRosterHasPositionalWithId(goblinIdInRoster);
 }
 
@@ -115,7 +115,9 @@ function isHumanTeam() {
 
 function isKhemriTeam() {
 	var skeletonIdInRoster = 2693;
-	return checkIfRosterHasPositionalWithId(skeletonIdInRoster);
+	var skeletonIdInBoxRoster = 2892;
+	return checkIfRosterHasPositionalWithId(skeletonIdInRoster) ||
+		checkIfRosterHasPositionalWithId(skeletonIdInBoxRoster);
 }
 
 function isLizardmenTeam() {
@@ -363,6 +365,10 @@ function generateWoodElfName() {
 	return randomArrayElement(names) + " " + randomArrayElement(genericElfNames);
 }
 
+function generateUnknownName() {
+	return randomArrayElement(names) + " " + randomArrayElement(names);
+}
+
 function generateNewPlayerName() {
 	if (isAmazonTeam()) {
 		return generateAmazonName();
@@ -413,7 +419,7 @@ function generateNewPlayerName() {
 	} else if (isWoodElfTeam()) {
 		return generateWoodElfName();
 	} else {
-		return "Excuse my ignorance Sir, but honestly, I don't have the even the brightest clue which team you have here! (PS: Nuffle was here)";
+		return generateUnknownName();
 	}
 }
 
