@@ -169,8 +169,8 @@ function isUnderworldTeam() {
 }
 
 function isVampireTeam() {
-	var vampireLordIdInRoster = 2699;
-	return checkIfRosterHasPositionalWithId(vampireLordIdInRoster);
+	var thrallInRoster = 2932;
+	return checkIfRosterHasPositionalWithId(thrallInRoster);
 }
 
 function isWoodElfTeam() {
