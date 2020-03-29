@@ -2,7 +2,7 @@
 // @name         NameGen Button Addon
 // @namespace    http://roante.github.io/fumbbl-namegen/
 // @version      1.0
-// @description  Adds a random name generator button to the Buy Player sceen
+// @description  Adds a random name generator button to the Buy Player screen
 // @author       Roante
 // @match        https://fumbbl.com/FUMBBL.php?page=buy_player*
 // @require      https://rawgit.com/roante/fumbbl-namegen/gh-pages/js/fumbbl-namegen.js
