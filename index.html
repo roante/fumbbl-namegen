@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,19 +51,13 @@
 		<h1>Roante's fumbbl-namegen</h1>
 	</div>
 	<div class="content">
-		<h2>How to set it up?</h2>
-
-		<ol>
-			<li>Drag this bookmark <a class="bookmarklet" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://rawgit.com/roante/fumbbl-namegen/gh-pages/js/fumbbl-namegen.js'})();">fumbbl-namegen</a> to your Bookmarks Bar.<br />
-				[<a href="http://my.opera.com/desktopteam/blog/2010/09/15/hello-bookmarks-bar">Opera</a>]
-				[<a href="http://support.mozilla.org/en-US/kb/bookmarks-toolbar-display-favorite-websites">Firefox</a>]
-				[<a href="https://support.google.com/chrome/answer/95745">Chrome</a>]
-			</li>
-			<li>When editing a team, copy and paste the URL into a new tab.</br>
-			    <i>This is important, the script won't work in the popup window except for Opera!</i></li>
-			<li>Click on the bookmark to get a random name :-)</li>
-		</ol>
-
+		<h2>How does it work?</h2>
+		<p>It works automagically!</p>
+		<p>When the usual <i>Buy Player</i> screen is opened, you'll get a new fancy random name!</p>
+		<p>You don't like the name? Keep pressing the random button!</p>
+		
+		<img src="pix/usage.png" />
+		
 		<p class="centered">
 			<!-- AddThis Button BEGIN -->
 			<div class="addthis_toolbox addthis_default_style ">
@@ -74,22 +69,21 @@
 			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-519e2ab62965a201"></script>
 			<!-- AddThis Button END -->
 		</p>
+		
+		<h2>How to set it up on Chrome?</h2>
 
-		<h2>How does it work?</h2>
-		<img src="pix/usage.png" />
+		<ol>
+			<li>Install the official <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en" target="_blank">Tampermonkey Extension</a> from the Google Chrome Web Store</li>. If you have it already, skip this step.
+			<li>Install the <a href="https://github.com/roante/fumbbl-namegen/raw/gh-pages/js/fumbbl-namegen.user.js" target="_blank">Roante's NameGen Button Addon</a>.
+			</li>
+			<li>You're done! :-)</li>
+		</ol>
 
 		<h2>How to update?</h2>
-		If you used the previous version, the new version is updated automatically when you first use it after the update -- you don't have to do anything! Just wait a few seconds for the first time when you hit the bookmarklet since the new version has to be downloaded (takes about 5 seconds). After that the script will be cached and should work until the next update (if there will ever be).
+		Nah. Not relevant yet. Bookmarklets removed, they were so oldschool. Too 2000-ish.
 
 		<h2>History</h2>
-		<ul>
-			<li><b>Version 2.0:</b> Team-specific random names.<br/>
-			Found it useful? Still accessible here:  <a class="bookmarklet" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/roante/fumbbl-namegen/gh-pages/js/fumbbl-namegen-v2.0.js'})();">fumbbl-namegen-v2.0</a>
-			</li>
-			<li><b>Version 1.0:</b> Initial release, simple random names.<br/>
-				Found it useful? Still accessible here:  <a class="bookmarklet" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://raw.github.com/roante/fumbbl-namegen/gh-pages/js/fumbbl-namegen-v1.0.js'})();">fumbbl-namegen-v1.0</a>
-			</li>
-		</ul>
+		Irrelevant lol. Check git history.
 
 		<h2>Acknowledgement</h2>
 		<p>Many thanks for <a href="http://www.creative-role-playing.com/fantasy-sounding-names/">Creative Role Playing</a> for compiling a list of fantasy-sounding names which I unashamedly stole :-)</p>
@@ -112,7 +106,7 @@
 			<li><a href="http://www.mybirthcare.com/favorites/pg4/Egyptian-names.asp">Names of Egyptian origin</a> (mybirthcare.com)</li>
 			<li><a href="http://www.lowchensaustralia.com/names/incanames.htm">Incan names</a> (lowchensaustralia.com -- I've just recognized this is a dog name giving site LoL. Well, Saurii and Slanns are also animal-alike creatures &#x263A)</li>
 			<li><a href="http://www.bloodbowl-game.com/">Blood Bowl Cyanide Game</a></li>
-			<li><a href="http://www.ellipsis.cx/~liana/names/norse/landnamabok.html">Viking Names found in Landn·mabÛk</a> (by Aryanhwy merch Catmael aka. Sara L. Uckelman)</li>
+			<li><a href="http://www.ellipsis.cx/~liana/names/norse/landnamabok.html">Viking Names found in Landn√°mab√≥k</a> (by Aryanhwy merch Catmael aka. Sara L. Uckelman)</li>
 			<li><a href="http://www.uesp.net/wiki/Lore:Orc_Names">Lore:Orc Names</a> (The Unofficial Elder Scrolls Pages)</li>
 			<li><a href="http://s6.zetaboards.com/The_UnderEmpire/topic/1145980/1/">Skaven names</a> (The Under Empire, Book of the Rat)</li>
 			<li><a href="http://vampirenamegenerator.net/list-of-vampire-names.html">List of Vampire Names</a> (Vampire Name Generator)</li>
@@ -124,9 +118,7 @@
 		<hr/>
 
 		<div class="footer">
-			2013 - Imagine some bullshit copyright note &copy; here :-) - <a href="mailto:roante.bb@gmail.com?subject=Your%20silly%20stuff%20ain't%20working!">Roante</a> 
-			<a class="bookmarklet" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='http://localhost/fumbbl-namegen/js/fumbbl-namegen.js'})();">Test :-)</a>
+			2013 - <script>document.write(new Date().getFullYear())</script> Imagine some bullshit copyright note &copy; here :-) - <a href="mailto:roante.bb@gmail.com?subject=Your%20silly%20stuff%20ain't%20working!">Roante</a>
 		</div>
 	</div>
 </body>
-
